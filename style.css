@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-header {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.tap-music {
+    display: flex;
+    justify-content: stretch;
+    width: 100%;
+}
+
+.tap-music>div {
+    height: 100px;
+    width: 100px;
+    flex: 1;
+}
+
+.box1 {
+    background-color: #00ffff;
+}
+
+.box2 {
+    background-color: blue;
+}
+
+.box3 {
+    background-color: coral;
+}
+
+.box4 {
+    background-color: palegreen;
+}
+
+.box5 {
+    background-color: black;
+}
+
+.box6 {
+    background-color: red;
+}
+
+.animate>div {
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    bottom: 0;
+    left: 20px;
+    z-index: -1;
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+        left: 20%;
+    }
+    50% {
+        bottom: 50%;
+        left: 50%;
+    }
+    100% {
+        bottom: 0;
+        left: 80%;
+    }
+}
